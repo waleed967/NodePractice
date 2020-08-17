@@ -1,0 +1,27 @@
+{
+  "name": "nodepractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "formidable": "^1.2.2",
+    "lower-case": "^2.0.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.4.11",
+    "upper-case": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waleed967/NodePractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waleed967/NodePractice/issues"
+  },
+  "homepage": "https://github.com/waleed967/NodePractice#readme"
+}
