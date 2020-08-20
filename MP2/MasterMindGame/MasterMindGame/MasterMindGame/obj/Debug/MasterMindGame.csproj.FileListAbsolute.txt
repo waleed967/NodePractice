@@ -1,0 +1,20 @@
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\bin\Debug\MasterMindGame.exe.config
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\bin\Debug\MasterMindGame.exe
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\bin\Debug\MasterMindGame.pdb
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.csprojResolveAssemblyReference.cache
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.Form1.resources
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.Properties.Resources.resources
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.csproj.GenerateResource.Cache
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.exe
+C:\Users\HP\source\repos\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.pdb
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\bin\Debug\MasterMindGame.exe.config
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\bin\Debug\MasterMindGame.exe
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\bin\Debug\MasterMindGame.pdb
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.csprojAssemblyReference.cache
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.Form1.resources
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.Properties.Resources.resources
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.csproj.GenerateResource.cache
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.csproj.CoreCompileInputs.cache
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.exe
+C:\Users\Waleed\Desktop\New folder\MP2\MasterMindGame\MasterMindGame\MasterMindGame\obj\Debug\MasterMindGame.pdb
