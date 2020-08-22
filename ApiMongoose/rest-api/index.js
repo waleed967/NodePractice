@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 mongoose
-    .connect("mongodb://localhost:27017/post", {
+    .connect("mongodb://localhost:27017/Post", {
 
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -18,12 +18,12 @@ app.listen(PORT, () => console.log("Started"));
 
 
 //Get
-const Post = require("./models/Post");
+const Post = require("./models/post");
 
 app.get("/posts", function(req, res) {
     Post.find(function(err, posts) {
         if (err) {
-            return res.status(500).json({ err: err.message });
+            return res.status(500).json({ error: err.message });
         }
         res.status(200).json({ posts: posts });
     });
@@ -32,17 +32,19 @@ app.get("/posts", function(req, res) {
 //Post
 app.post("/posts", function(req, res) {
 
-    const { id, title, body } = req.body;
+    const { id, name, city } = req.body;
     const post = new Post({
         id: id,
-        tile: title,
-        body: body,
+        name: name,
+        city: city
     });
 
     post.save(function(err, newPost) {
+
         if (err) {
             return res.status(500).json({ err: err.message });
         }
+
         res.status(200).json({ msg: "Post Saved" });
 
     });
@@ -60,7 +62,7 @@ app.get("/posts/:postID", function(req, res) {
             return res.status(500).json({ err: err.message });
         }
 
-        if (post = null) return res.status(200).json({ msg: "No post found" });
+        if (post == null) return res.status(200).json({ msg: "No post found" });
 
         res.status(200).json({ post: post });
     });
@@ -73,8 +75,8 @@ app.put("/posts/:postID", function(req, res) {
 
     const postID = req.params.postID;
 
-    const { title } = req.body;
-    Post.findOneAndUpdate({ id: postID }, { title: title }, function(err, post) {
+    const { name } = req.body;
+    Post.findOneAndUpdate({ id: postID }, { name: name }, function(err, post) {
 
         if (err) {
             return res.status(500).json({ err: err.message });
@@ -82,7 +84,7 @@ app.put("/posts/:postID", function(req, res) {
 
 
 
-        res.status(200).json({ msg: "title updated" });
+        res.status(200).json({ msg: "Name Updated" });
     });
 });
 
