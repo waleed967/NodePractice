@@ -17,7 +17,7 @@ const PORT = 3000;
 app.listen(PORT, () => console.log("Started"));
 
 
-//Get
+//Get All Info 
 const Post = require("./models/post");
 
 app.get("/posts", function(req, res) {
@@ -32,11 +32,13 @@ app.get("/posts", function(req, res) {
 //Post
 app.post("/posts", function(req, res) {
 
-    const { id, name, city } = req.body;
+    const { id, name, address, cnic, country } = req.body;
     const post = new Post({
         id: id,
         name: name,
-        city: city
+        address: address,
+        cnic: cnic,
+        country: country
     });
 
     post.save(function(err, newPost) {
@@ -50,13 +52,13 @@ app.post("/posts", function(req, res) {
     });
 });
 
-//Get
+//Get Info by Name
 
-app.get("/posts/:postID", function(req, res) {
+app.get("/posts/:postNAME", function(req, res) {
 
 
-    const postID = req.params.postID;
-    Post.findOne({ id: postID }, function(err, post) {
+    const postNAME = req.params.postNAME;
+    Post.findOne({ name: postNAME }, function(err, post) {
 
         if (err) {
             return res.status(500).json({ err: err.message });
@@ -68,15 +70,20 @@ app.get("/posts/:postID", function(req, res) {
     });
 });
 
-//Put
+//Put Updated Info by Name
 
-app.put("/posts/:postID", function(req, res) {
+app.put("/posts/:postNAME", function(req, res) {
 
 
-    const postID = req.params.postID;
+    const postNAME = req.params.postNAME;
 
+    const { id } = req.body;
     const { name } = req.body;
-    Post.findOneAndUpdate({ id: postID }, { name: name }, function(err, post) {
+    const { address } = req.body;
+    const { cnic } = req.body;
+    const { country } = req.body;
+
+    Post.findOneAndUpdate({ name: postNAME }, { id: id, name: name, address: address, cnic: cnic, country: country }, function(err, post) {
 
         if (err) {
             return res.status(500).json({ err: err.message });
@@ -88,13 +95,13 @@ app.put("/posts/:postID", function(req, res) {
     });
 });
 
-//Delete
+//Delete Info by Name 
 
-app.delete("/posts/:postID", function(req, res) {
+app.delete("/posts/:postNAME", function(req, res) {
 
-    const postID = req.params.postID;
+    const postNAME = req.params.postNAME;
 
-    Post.deleteOne({ id: postID }, function(err) {
+    Post.deleteOne({ name: postNAME }, function(err) {
         if (err) {
             return res.status(500).json({ err: err.message });
         }
